@@ -1,0 +1,137 @@
+<?xml version="1.0" ?>
+<Definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CubeBlocks>
+		<Definition xsi:type="MyObjectBuilder_CockpitDefinition">
+			<Id>
+				<TypeId>Cockpit</TypeId>
+				<SubtypeId>ARYX_MiniBubbleCockpit</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_ARYX_MiniBubbleCockpit}</DisplayName>
+			<Description>{LOC:Description_ARYX_MiniBubbleCockpit}</Description>
+			<Icon>Textures\GUI\Icons\Aryx\AryxMiniBubbleCockpit.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="3" y="3" z="3"/>
+			<ModelOffset x="0" y="0" z="0"/>
+			<Model>Models\Aryx\Cockpits\ARYX_MiniBubbleCockpit.mwm</Model>
+			<Components>
+                <Component Subtype="SteelPlate" Count="5" />
+                <Component Subtype="Construction" Count="5" />
+                <Component Subtype="Motor" Count="3" />
+                <Component Subtype="Display" Count="5" />
+                <Component Subtype="Computer" Count="20" />
+                <Component Subtype="SteelPlate" Count="5" />
+                <Component Subtype="BulletproofGlass" Count="60" />
+			</Components>
+			<CriticalComponent Subtype="Computer" Index="0"/>
+			<MountPoints>
+				<MountPoint Side="Front" StartX="1" StartY="1" EndX="2" EndY="2"/>			
+				<MountPoint Side="Back" StartX="0.75" StartY="0.88" EndX="2.25" EndY="2.12"/>
+			</MountPoints>
+			<BuildProgressModels>
+				<Model BuildPercentUpperBound="0.50" File="Models\Aryx\Cockpits\ARYX_MiniBubbleCockpit_BS1.mwm"/>
+				<Model BuildPercentUpperBound="1.00" File="Models\Aryx\Cockpits\ARYX_MiniBubbleCockpit_BS2.mwm"/>
+			</BuildProgressModels>
+			<BlockPairName>ARYX_MiniBubbleCockpit</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			
+			<ScreenAreas>
+			<ScreenArea Name="CockpitScreen_01" DisplayName="DisplayName_Screen_TopLeft" TextureResolution="256" ScreenWidth="2" ScreenHeight="1" Script="TSS_ArtificialHorizon" />
+			<ScreenArea Name="CockpitScreen_02" DisplayName="DisplayName_Screen_TopRight" TextureResolution="256" ScreenWidth="2" ScreenHeight="1" Script="TSS_EnergyHydrogen" />
+			<ScreenArea Name="CockpitScreen_03" DisplayName="DisplayName_Screen_BottomLeft" TextureResolution="256" ScreenWidth="2" ScreenHeight="1" Script="TSS_Gravity" />        
+			<ScreenArea Name="CockpitScreen_04" DisplayName="DisplayName_Screen_BottomRight" TextureResolution="256" ScreenWidth="2" ScreenHeight="1" Script="TSS_ClockAnalog" />
+			<ScreenArea Name="CockpitScreen_05" DisplayName="DisplayName_Screen_Keyboard" TextureResolution="256" ScreenWidth="3" ScreenHeight="1" />
+			</ScreenAreas>
+			<CharacterAnimation>AryxMiniBubbleCockpitPose</CharacterAnimation>
+			<VoxelPlacement>
+			<StaticMode>
+				<PlacementMode>OutsideVoxel</PlacementMode>
+				<MaxAllowed>0.2</MaxAllowed>
+				<MinAllowed>0</MinAllowed>
+			</StaticMode>
+			<DynamicMode>
+				<PlacementMode>OutsideVoxel</PlacementMode>
+				<MaxAllowed>0.2</MaxAllowed>
+				<MinAllowed>0</MinAllowed>
+			</DynamicMode>
+			</VoxelPlacement>
+			<MirroringZ>Y</MirroringZ>
+			<MirroringY>Z</MirroringY>
+			<BuildTimeSeconds>20</BuildTimeSeconds>
+			<EdgeType>Light</EdgeType>
+			<EnableFirstPerson>true</EnableFirstPerson>
+			<EnableShipControl>true</EnableShipControl>
+			<EnableBuilderCockpit>true</EnableBuilderCockpit>
+			<DeformationRatio>0.2</DeformationRatio>
+			<DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+			<DamagedSound>ParticleElectrical</DamagedSound>
+			<PrimarySound>BlockCockpitSm</PrimarySound>
+			<OxygenCapacity>80</OxygenCapacity>
+			<IsPressurized>true</IsPressurized>
+			<GetInSound>ShipSmCockpitIn</GetInSound>
+			<GetOutSound>ShipSmCockpitOut</GetOutSound>
+			<DestroyEffect>BlockDestroyedExplosion_Small</DestroyEffect>
+			<DestroySound>WepSmallWarheadExpl</DestroySound>
+			<RaycastOffset>
+			<X>-0.0045</X>
+			<Y>0.467</Y>
+			<Z>0.15</Z>
+			</RaycastOffset>
+			<PCU>50</PCU>  
+            <TargetLockingEnabled>true</TargetLockingEnabled> 			
+		</Definition>	
+		
+        <Definition xsi:type="MyObjectBuilder_TextPanelDefinition">
+            <Id>
+                <TypeId>TextPanel</TypeId>
+				<SubtypeId>ARYX_MiniBubbleCockpit_HUD</SubtypeId>
+			</Id>
+			<DisplayName>{LOC:DisplayName_ARYX_MiniBubbleCockpit_HUD}</DisplayName>
+			<Description>{LOC:Description_ARYX_MiniBubbleCockpit_HUD}</Description>
+			<Icon>Textures\GUI\Icons\AstronautBackpack.dds</Icon>
+			<CubeSize>Small</CubeSize>
+			<BlockTopology>TriangleMesh</BlockTopology>
+			<Size x="1" y="1" z="1"/>
+			<ModelOffset x="0" y="0" z="0.25"/>
+			<Model>Models\Aryx\Cockpits\ARYX_MiniBubbleCockpit_HUD.mwm</Model>
+            <Components>
+                <Component Subtype="Construction" Count="1" />
+                <Component Subtype="Computer" Count="1" />
+                <Component Subtype="Display" Count="1" />
+                <Component Subtype="BulletproofGlass" Count="1" />
+            </Components>
+            <CriticalComponent Subtype="Display" Index="0" />
+			<MountPoints>
+				<MountPoint Side="Back" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Left" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Right" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Top" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+				<MountPoint Side="Bottom" StartX="0.00" StartY="0.00" EndX="1.00" EndY="1.00"/>
+			</MountPoints>
+			<BlockPairName>ARYX_MiniBubbleCockpit_HUD</BlockPairName>
+			<MirroringY>Z</MirroringY>
+			<MirroringZ>Y</MirroringZ>
+			
+            <ScreenAreas>
+                <ScreenArea Name="TransparentScreenArea" DisplayName="TransparentScreenArea" TextureResolution="512" ScreenWidth="3" ScreenHeight="2" />
+            </ScreenAreas>
+            <MirroringZ>Y</MirroringZ>
+            <MirroringY>Z</MirroringY>
+            <EdgeType>Light</EdgeType>
+            <HasInventory>false</HasInventory>
+            <BuildTimeSeconds>6</BuildTimeSeconds>
+            <MaxScreenRenderDistance>120</MaxScreenRenderDistance>
+            <ResourceSinkGroup>Utility</ResourceSinkGroup>
+            <RequiredPowerInput>0.00002</RequiredPowerInput>
+            <PanelMaterialName>TransparentScreenArea</PanelMaterialName>
+            <DamageEffectName>Damage_Electrical_Damaged</DamageEffectName>
+            <DamagedSound>ParticleElectrical</DamagedSound>
+            <PCU>50</PCU>
+        </Definition>	
+		
+		
+	</CubeBlocks>
+</Definitions>
+
+

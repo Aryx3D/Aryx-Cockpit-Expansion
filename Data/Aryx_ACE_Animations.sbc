@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<Definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Animations>
+  
+
+    <Animation>
+      <Id>
+        <TypeId>AnimationDefinition</TypeId>
+        <SubtypeId>AryxMiniBubbleCockpitPose</SubtypeId>
+      </Id>
+      <DisplayName>AryxMiniBubbleCockpitPose</DisplayName>
+      <Description>AryxMiniBubbleCockpitPose</Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <AnimationModel>Models\Aryx\Animations\ARYX_MiniBubbleCockpitPose.mwm</AnimationModel>
+      <ClipIndex>0</ClipIndex>
+      <InfluenceArea>Body</InfluenceArea>
+      <Public>false</Public>
+    </Animation>
+	
+   
+  </Animations>
+</Definitions>
