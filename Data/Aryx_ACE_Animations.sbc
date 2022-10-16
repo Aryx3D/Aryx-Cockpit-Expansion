@@ -17,6 +17,18 @@
       <Public>false</Public>
     </Animation>
 	
-   
+    <Animation>
+      <Id>
+        <TypeId>AnimationDefinition</TypeId>
+        <SubtypeId>AryxHAZOPCockpitPose</SubtypeId>
+      </Id>
+      <DisplayName>AryxHAZOPCockpitPose</DisplayName>
+      <Description>AryxHAZOPCockpitPose</Description>
+      <Icon>Textures\GUI\Icons\Fake.dds</Icon>
+      <AnimationModel>Models\Aryx\Animations\ARYX_HAZOPCockpitPose.mwm</AnimationModel>
+      <ClipIndex>0</ClipIndex>
+      <InfluenceArea>Body</InfluenceArea>
+      <Public>false</Public>
+    </Animation>  
   </Animations>
 </Definitions>

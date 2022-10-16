@@ -3,7 +3,7 @@
    <BlueprintClassEntries> 
 
     <Entry Class="SmallBlocks" BlueprintSubtypeId="Cockpit/ARYX_MiniBubbleCockpit" />		
-
+    <Entry Class="SmallBlocks" BlueprintSubtypeId="Cockpit/ARYX_HAZOPCockpit" />		
 	
    </BlueprintClassEntries>
 </Definitions>

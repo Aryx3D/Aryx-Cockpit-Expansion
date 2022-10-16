@@ -11,7 +11,7 @@
       <ItemIds>
 		<string>Cockpit/ARYX_MiniBubbleCockpit</string>
 		<string>TextPanel/ARYX_MiniBubbleCockpit_HUD</string>		
-		
+		<string>Cockpit/ARYX_HAZOPCockpit</string>			
       </ItemIds>
     </Category> 
 
@@ -37,9 +37,11 @@
       <ItemIds>
 		<string>Cockpit/ARYX_MiniBubbleCockpit</string>
 		<string>TextPanel/ARYX_MiniBubbleCockpit_HUD</string>	
-		
+		<string>Cockpit/ARYX_HAZOPCockpit</string>		
       </ItemIds>
     </Category>  	
+	
+	
 	
 </CategoryClasses>
 </Definitions>

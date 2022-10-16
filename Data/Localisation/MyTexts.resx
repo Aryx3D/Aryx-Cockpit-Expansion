@@ -138,6 +138,17 @@
     <value>A holographic LCD HUD for the Compact Bubble Cockpit. Warranty void if used on other cockpits.</value>
     <comment/>
   </data> 
+
+ 
+  <data name="DisplayName_ARYX_HAZOPCockpit" xml:space="preserve">
+    <value>Hazardous Operations Cockpit</value>
+    <comment/>
+  </data>
+   <data name="Description_ARYX_HAZOPCockpit" xml:space="preserve">
+    <value>A heavily armoured and reinforced cockpit designed to face the worst of the worst. Poor visibility but excellent durability. Weighs a tonne but will get you through hell and back, whilst keeping your coffee warm!</value>
+    <comment/>
+  </data> 
+
   
-  
+    
 </root>
